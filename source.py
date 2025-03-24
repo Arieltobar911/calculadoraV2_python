@@ -106,7 +106,7 @@ while True:
             return CTR in ["+", "-", "*", "/", "**"] #retorna verdadero si el operador esta en la lista
         
         #si pre resultados cuenta con un resultado anterior
-        if pre_resultados is not None:
+        if pre_resultados is not None: #si el ultimo resultado esta aun disponible
             print(f"\n Último resultado: {pre_resultados}") #muestra el resultado anterior
             reset = input("\n ¿Quieres hacer un cálculo desde cero? (si/no): ") #pregunta si lo quieres utilizar o descartar
             if reset.lower() == "si": #si eliges si
@@ -115,7 +115,7 @@ while True:
                 num1 = pre_resultados #retorma el resultado anterior, utilizandolo como num1
         
         #si pre resultados no cuenta con nada
-        if pre_resultados is None:
+        if pre_resultados is None: #si ya no hay un ultimo
             while True: #crea un siclo while siempre verdadero
                 num1 = input("\n Ingresa el primer número: ") #pide que ingreses un numero
                 if validator(num1): #llama a la funcion validator
