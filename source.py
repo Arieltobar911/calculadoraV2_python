@@ -13,7 +13,7 @@ class InvalidDecimalError(Exception):
         super().__init__(message) #hace llamado al atributo mensaje 
 
 pre_resultados = None #define pre resultados (variable) como nada
-#sera importante, para recordar la respuesta anterior y tener la opcion de usarla
+#sera importante, para recordar el resultado anterior y tener la opcion de usarlo
 #en tus calculos
 
 historial = [] #crea la lista historial, para almacenar todos los calculos
